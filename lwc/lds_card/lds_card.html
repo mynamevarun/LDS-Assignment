@@ -1,0 +1,15 @@
+<template>
+    <lightning-layout class="slds-grid slds-wrap slds-gutters_x-small">
+        <template for:each={cards} for:item="card" for:index="index">
+            <lightning-layout-item key={card.key} class="slds-col slds-small-size_1-of-1 slds-large-size_4-of-12">
+                <c-lds_card-item
+                    icon-name={card.iconName}
+                    size={card.size}
+                    title={card.title}
+                >
+                    <p class="slds-m-horizontal_small">{card.content}</p>
+                </c-lds_card-item>
+            </lightning-layout-item>
+        </template>  
+    </lightning-layout>
+</template>

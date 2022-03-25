@@ -1,0 +1,78 @@
+<template>
+    <div class="slds-card">
+        <div class="slds-border_bottom lds_wholesale-header">
+            <h1 class="">
+                <span class="slds-page-header__title slds-truncate" title="Rohde Corp - 80,000 Widgets">Avanza Enterprises Limited</span>
+            </h1>
+            <p class="slds-page-header__name-meta">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="slds-m-around_medium">
+            <h2 class="slds-text-heading_medium" >Wholesale Application Form</h2>
+            <lightning-layout class="slds-grid slds-wrap slds-gutters_x-small slds-m-top_medium">
+                <lightning-layout-item class="slds-col slds-small-size_1-of-2 slds-large-size_1-of-4">
+                    <label data-id='name' class="lds_wholesale-form-label slds-form-element__label"><abbr class="slds-required" title="required">* </abbr>Business Name</label>
+                    <lightning-input type="text" data-id="name" placeholder="Enter business name..." variant="label-hidden"></lightning-input>
+                </lightning-layout-item>
+                <lightning-layout-item class="slds-col slds-small-size_1-of-2 slds-large-size_1-of-4">
+                    <label data-id='abn' class="lds_wholesale-form-label slds-form-element__label"><abbr class="slds-required" title="required">* </abbr>A.B.N</label>
+                    <lightning-input type="text" data-id="abn" placeholder="ABCD_EFGH" variant="label-hidden"></lightning-input>
+                </lightning-layout-item>
+                <lightning-layout-item class="slds-col slds-small-size_1-of-2 slds-large-size_1-of-4">
+                    <label data-id='email' class="lds_wholesale-form-label slds-form-element__label"><abbr class="slds-required" title="required">* </abbr>Email</label>
+                    <lightning-input type="email" data-id="email" variant="label-hidden" placeholder="abc@abc.com"></lightning-input>
+                </lightning-layout-item>
+                <lightning-layout-item class="slds-col slds-small-size_1-of-2 slds-large-size_1-of-4">
+                    <label class="lds_wholesale-form-label slds-form-element__label" data-id="url"><abbr class="slds-required" title="required">* </abbr>Website</label>
+                    <lightning-input type="url" data-id="url" variant="label-hidden"></lightning-input>
+                </lightning-layout-item>
+            </lightning-layout>
+            <lightning-layout class="slds-grid slds-wrap slds-gutters_x-small">
+                <lightning-layout-item class="slds-col slds-small-size_1-of-2 slds-large-size_1-of-4">
+                    <!-- <div class="slds-form"> -->
+                        <fieldset class="slds-form-element slds-form-element_compound">
+                            <legend class="slds-form-element__legend slds-form-element__label">Phone Number</legend>
+                            <div class="slds-form-element__control">
+                                <div class="slds-form-element__row">
+                                    <div class="slds-size_2-of-3">
+                                        <lightning-input label="Area Code" type="text"></lightning-input>
+                                    </div>
+                                    <div class="slds-size_1-of-3">
+                                        <lightning-input label="Number" type="text"></lightning-input>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    <!-- </div> -->
+                </lightning-layout-item>
+                <lightning-layout-item class="slds-col slds-small-size_1-of-2 slds-large-size_1-of-4">
+                    <div class="slds-form">
+                        <fieldset class="slds-form-element slds-form-element_compound">
+                            <legend class="slds-form-element__legend slds-form-element__label">Billing Address</legend>
+                            <div class="slds-form-element__control">
+                                <div class="slds-form-element__row">
+                                    <div class="slds-size_2-of-3">
+                                        <lightning-input label="Address" type="text"></lightning-input>
+                                    </div>
+                                    <div class="slds-size_1-of-3">
+                                        <lightning-input label="Pin Code" type="text"></lightning-input>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item class="slds-col slds-small-size_1-of-2 slds-large-size_1-of-4 slds-p-top_large">
+                    <lightning-input type="checkbox" label="Do you own multiple businesses"></lightning-input>
+                </lightning-layout-item>
+            </lightning-layout>
+            <lightning-layout class="slds-grid slds-wrap slds-grid_align-end">
+                <lightning-layout-item class="slds-col">
+                    <lightning-button label="Cancel" class="slds-p-right_small"></lightning-button>
+                </lightning-layout-item>
+                <lightning-layout-item class="slds-col">
+                    <lightning-button label="Save" variant="brand"></lightning-button>
+                </lightning-layout-item>
+            </lightning-layout>
+        </div>
+    </div>
+</template>

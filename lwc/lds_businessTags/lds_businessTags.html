@@ -1,0 +1,10 @@
+<template>
+    <div class="slds-card">
+        <h2 class="slds-text-heading_medium slds-p-around_small slds-truncate" slot="title" data-id="title">Business Tags</h2>
+        <div class="slds-m-horizontal_small slds-m-bottom_small">
+            <template for:each={badges} for:item="badge">
+                <lightning-badge key={badge.key} label={badge.label} icon-name="utility:close" icon-position="end"></lightning-badge>
+            </template>
+        </div>
+    </div>
+</template>
